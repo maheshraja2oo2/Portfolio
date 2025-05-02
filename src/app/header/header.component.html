@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">MY PORTFOLIO</a>
+    
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div [ngClass]="{ 'collapse': isNavbarCollapsed, 'navbar-collapse': true }">
+      <ul class="navbar-nav w-100 d-flex justify-content-end">
+        <li class="nav-item" (click)="closeNavbar()">
+          <a class="nav-link" routerLink="/app-home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item" (click)="closeNavbar()">
+          <a class="nav-link" routerLink="/app-project" routerLinkActive="active">Project</a>
+        </li>
+        <li class="nav-item" (click)="closeNavbar()">
+          <a class="nav-link" routerLink="/app-skills" routerLinkActive="active">Skills</a>
+        </li>
+        <li class="nav-item" (click)="closeNavbar()">
+          <a class="nav-link" routerLink="/app-about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item" (click)="closeNavbar()">
+          <a class="nav-link" routerLink="/app-contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
